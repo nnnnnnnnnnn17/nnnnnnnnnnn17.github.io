@@ -1,0 +1,496 @@
+@charset "UTF-8";
+
+/*共通部分
+---------------------------*/
+
+html{
+    font-size: 100%;
+    height: 100%;
+}
+body{
+    background-color: #ffffff;
+    height: 100%;
+
+}
+.top-wrapper{
+    min-height: 100%;
+    position: relative;
+}
+h1{
+    color: #484646;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+h2{
+    color: #484646;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: 100px 50px 0;
+}
+p{
+    color: #484646;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: 100px 50px 0;
+}
+
+img{
+    max-width: 100%;
+}
+.under{
+    border-bottom: dashed 4px orange;
+}
+.under-solid{
+    border-bottom: solid 1px orange;
+}
+
+/*HEADER
+---------------------------------*/
+.page-header{
+    height: 115px;
+    background-color: #807676;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left:0px;
+    z-index: 10;
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 10%;    /*P184に記載あり*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+.insta{
+    width: 35px;
+    height: 35px;
+    margin: 3px 12px ;
+    
+}
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    margin: 20px 0;
+    
+}
+
+.main-nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+  
+}
+.main-nav a:hover{
+    color: #595959;
+}
+
+.footer-insta{
+    width: 35px;
+    height: 35px;
+    margin: 0px 12px ;
+    
+}
+    
+
+/*Top page
+---------------------------------*/
+.big-bg{
+    padding-bottom: 115px;
+
+}
+.top-page{
+    text-align: center;
+    margin-top: 100px auto;
+}
+
+
+.top-image{
+    width: 620px;
+    height: 380px;
+    margin: 50px;
+}
+.sample{
+    width: 790px;
+    height: 280px;
+    margin: 40px;    
+}
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Footer
+-----------------------------------------------------*/
+
+.page-footer{
+    height: 115px;
+    background-color: #807676;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-wrapper{
+    max-width: 1100px;
+    margin: 50px auto 0px;
+    padding: 0 10% 0;    /*P184に記載あり*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0;
+
+}
+
+/*About-page
+----------------------------------------*/
+.About{
+    margin-top: 200px;
+    margin-left: 250px;
+}
+.about-wrapper{
+    max-width: 1100px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.about-icon{
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 50px auto;
+}
+
+.about-memo{
+    margin-top: 30px;
+
+}
+/*Works
+-------------------------------------------------------------*/
+.works-wrapper{
+    max-width: 1100px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.works-image{
+    width: 800px;
+    height: 290px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+/*Works_1
+---------------------------------------------------------------*/
+
+.works-wrapper{
+    margin-top: 150px;
+}
+
+.back{
+    width: 600px;
+    text-align: left;
+    margin: 0px auto;
+    display: flex;
+    position: relative;
+    z-index: 0;
+    
+}
+
+.circle{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #807676;
+    opacity: 51%;
+    justify-content: left;
+    text-align: center;
+    line-height: 28px;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+.back-comment{
+    font-size: 12px;
+    color: #595959;
+    line-height: 28px;
+    padding-top: 5px;
+    padding-left: 12px;
+    text-decoration: none;
+
+}
+
+.image-sample{
+    max-width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 0px;
+    
+}
+.PC{
+    margin-right: 0px;
+}
+.sp{
+    margin-left: 0px;
+}
+
+.image-sample2{
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px auto;
+
+}
+
+.coment-container{
+margin-top: 20px;
+
+}
+.coment{
+    padding: 2px;
+    margin: 2px;
+}
+
+.coment-URL{
+    display: block;
+    color: #484646;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+/*Contact
+------------------------------------------------------------*/
+
+.contact-wrapper{
+    max-width: 480px;
+    margin: 100px auto;
+    text-align: left;
+
+}
+
+.contact-memo{
+    margin: 100px auto;
+
+}
+
+/*Form*/
+
+.form{
+    margin-bottom: 25px;
+}
+
+label{
+    font-size: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+     background-color: #ffffff;
+     border: 1px #807676 solid;
+     padding: 10px;
+     font-size: 10px;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+
+    width: 100%;
+    max-width: 480px;
+}
+
+textarea{
+
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+
+}
+
+input[type="submit"]{
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    background-color: #807676;
+    color: #ffffff;
+    width: 100%;
+    max-width: 480px;
+    height: 1.5rem;
+    border-radius: 10px;
+    
+}
+.form-hover:hover{
+    border:1px #000000 solid;
+}
+.hover:hover{
+    opacity: 0.6;
+}
+.hover{
+    margin-top: 20px;
+}
+
+/*レスポンシブ対応
+------------------------------------------------------*/
+
+@media (max-width: 600px){
+    
+    h1 {
+        font-size:26px;
+    }
+
+    /*HEDER*/
+    .insta{
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .main-nav{
+        font-size: 15px;
+        margin: 25px auto;
+    }
+    .main-nav li{
+        margin: 0 5px;
+    }
+    .main-nav a{
+        color: #ffffff;
+        text-decoration: none;
+        padding: 2px 8px;
+        text-align: center;
+    }
+
+    /*Top-page*/
+  
+    .top-image{
+        width: 280px;
+        height: 171px;
+        margin: 20px auto;
+    }
+    .sample{
+        width: 280px;
+        height: 100px;
+    }
+
+    /*FOOTER*/
+
+    .footer-insta{
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+    }
+
+    /*About*/
+
+    #About{
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+
+    }
+    .About{
+        margin-top: 200px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-wrapper{
+        margin-top: 20px;
+    }
+    
+    .about-icon{
+        width: 150px;
+        height: 150px;
+        margin: 0px auto;
+    }
+
+    .about-memo{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    /*Works*/
+    #Works{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .works-image{
+        width: 280px;
+        height: 90px;
+    }
+    .works-wrapper{
+        margin-top: 10px;
+    }
+
+    #Works-1{
+        margin: 150px auto;
+        text-align: center;
+    }
+    .image-sample{
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 280px;
+        text-align: center;
+    }
+    .sp{
+        width: 110px;
+        margin: 0 auto;
+    }
+    .image-sample2{
+        margin-top: 30px;
+    }
+    #Contact{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .contact-wrapper{
+        text-align: center;
+        margin-top: 0px;
+    }
+    .contact-memo{
+        font-size: 10px;
+        margin: 50px auto;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"]{
+
+    width: 100%;
+    max-width: 240px;
+    }
+    textarea{
+
+    width: 100%;
+    max-width: 240px;
+    height: 4rem;
+    }
+    input[type="submit"]{
+        width: 100%;
+        max-width: 240px;
+        height: 1.5rem;
+    }
+    
+}
